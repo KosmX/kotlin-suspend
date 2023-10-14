@@ -18,8 +18,9 @@ fun collatzSequence(start: Int) = sequence { collatzGenerator(start) }
 
 
 fun main() {
-    //collatzSequence(1234).forEach(::println)
+    collatzSequence(1234).forEach(::println)
 
+    /*
     val s = sequence {
         yield(1)
         yield(24)
@@ -30,4 +31,6 @@ fun main() {
      * See [kotlin.coroutines.jvm.internal.BaseContinuationImpl]
      */
     s.forEach { println(it) }
+
+     // */
 }
