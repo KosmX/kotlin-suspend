@@ -1,9 +1,10 @@
-package dev.kosmx.suspend.invoke
+package dev.kosmx.suspend.extra
 
 import kotlin.coroutines.Continuation
 
 /**
  * [kotlin.coroutines.jvm.internal.BaseContinuationImpl]
+ * A simplified state-machine from [path]
  */
 class PathSequence : /*kotlin.coroutines.jvm.internal.RestrictedSuspendLambda*/ () -> PathSequence {
 

@@ -1,7 +1,8 @@
-package dev.kosmx.suspend.invoke
+package dev.kosmx.suspend.extra
 
 import kotlinx.coroutines.runBlocking
 
+// simple code for decompiling
 suspend fun testSuspend(i: Int): Int {
     return i * 2
 }

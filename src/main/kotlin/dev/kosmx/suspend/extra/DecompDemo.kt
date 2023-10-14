@@ -1,4 +1,4 @@
-package dev.kosmx.suspend.invoke
+package dev.kosmx.suspend.extra
 
 fun main() {
 

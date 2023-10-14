@@ -1,4 +1,4 @@
-package dev.kosmx.suspend.invoke
+package dev.kosmx.suspend.extra
 
 data class Pos(val x: Int = 0, val y: Int = 0) {
     operator fun plus(other: Pos) = Pos(x + other.x, y + other.y)
@@ -6,7 +6,7 @@ data class Pos(val x: Int = 0, val y: Int = 0) {
     operator fun minus(pos: Pos) = Pos(x - pos.x, y - pos.y)
 }
 
-fun path() = sequence<Pos> {
+fun path() = sequence {
     var pos = Pos() // label 0
 
     var length = 1
